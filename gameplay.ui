@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameplayWindow</class>
+ <widget class="QMainWindow" name="GameplayWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>631</width>
+    <height>486</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>GAMEPLAY</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../virat-kohli.webp</normaloff>../virat-kohli.webp</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">BACKGROUND-COLOR:rgb(170, 255, 127);
+</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QFrame" name="selectionframe">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">BACKGROUND-COLOR:rgb(193, 166, 200);
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="Yourselection_label">
+         <property name="font">
+          <font>
+           <family>MS Shell Dlg 2</family>
+           <pointsize>8</pointsize>
+           <weight>9</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Your Selections:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="bat_label">
+           <property name="font">
+            <font>
+             <family>MS Shell Dlg 2</family>
+             <pointsize>8</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+BACKGROUND-COLOR:rgb(255, 170, 127);</string>
+           </property>
+           <property name="text">
+            <string>Batsmen(BAT)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="batsmanlabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>17</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="bow_label">
+           <property name="styleSheet">
+            <string notr="true">BACKGROUND-COLOR:rgb(255, 170, 127);</string>
+           </property>
+           <property name="text">
+            <string>Bowlers(BOW)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="bowlerlabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>17</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="ar_label">
+           <property name="styleSheet">
+            <string notr="true">BACKGROUND-COLOR:rgb(255, 170, 127);</string>
+           </property>
+           <property name="text">
+            <string>Allrounders(AR)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="allrounderlabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>17</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="wk_label">
+           <property name="styleSheet">
+            <string notr="true">BACKGROUND-COLOR:rgb(255, 170, 127);</string>
+           </property>
+           <property name="text">
+            <string>WicketKeepers(WK)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="wicketkeeperlabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="pointsavail_label">
+        <property name="styleSheet">
+         <string notr="true">BACKGROUND-COLOR:rgb(255, 170, 127);</string>
+        </property>
+        <property name="text">
+         <string>Points Available</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="palabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>188</width>
+          <height>17</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="pointsused_label">
+        <property name="styleSheet">
+         <string notr="true">BACKGROUND-COLOR:rgb(255, 170, 127);
+</string>
+        </property>
+        <property name="text">
+         <string>Points Used</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="pulabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QRadioButton" name="bat_radioButton">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 127);</string>
+        </property>
+        <property name="text">
+         <string>BAT</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="bow_radioButton">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 127);
+</string>
+        </property>
+        <property name="text">
+         <string>BOW</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="ar_radioButton">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 127);</string>
+        </property>
+        <property name="text">
+         <string>AR</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="wk_radioButton">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 127);</string>
+        </property>
+        <property name="text">
+         <string>WK</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>158</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="teamname_label">
+        <property name="styleSheet">
+         <string notr="true">BACKGROUND-COLOR:rgb(255, 170, 127);</string>
+        </property>
+        <property name="text">
+         <string>Team Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="tnlabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>48</width>
+          <height>68</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="2">
+       <widget class="QListView" name="used_listView">
+        <property name="styleSheet">
+         <string notr="true">BACKGROUND-COLOR:rgb(227, 227, 227)
+;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QListView" name="availabe_listView">
+        <property name="styleSheet">
+         <string notr="true">BACKGROUND-COLOR:rgb(227, 227, 227);</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>228</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exit_Button">
+        <property name="font">
+         <font>
+          <family>Tw Cen MT Condensed Extra Bold</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::TabFocus</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 0,0);
+color:white;
+border:outset;
+font: 12pt &quot;Tw Cen MT Condensed Extra Bold&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>exit</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../ms-dhoni.webp</normaloff>../ms-dhoni.webp</iconset>
+        </property>
+        <property name="shortcut">
+         <string>Return</string>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>228</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <zorder>selectionframe</zorder>
+   <zorder></zorder>
+   <zorder>bat_label</zorder>
+   <zorder>batsmanlabel</zorder>
+   <zorder>bow_label</zorder>
+   <zorder>bowlerlabel</zorder>
+   <zorder>ar_label</zorder>
+   <zorder>allrounderlabel</zorder>
+   <zorder>wk_label</zorder>
+   <zorder>wicketkeeperlabel</zorder>
+   <zorder>horizontalSpacer_2</zorder>
+   <zorder>horizontalSpacer_3</zorder>
+   <zorder>horizontalSpacer_8</zorder>
+   <zorder>palabel</zorder>
+   <zorder>pulabel</zorder>
+   <zorder>tnlabel</zorder>
+   <zorder>bat_label</zorder>
+   <zorder>horizontalSpacer_8</zorder>
+   <zorder>batsmanlabel</zorder>
+   <zorder>bow_label</zorder>
+   <zorder>bowlerlabel</zorder>
+   <zorder>horizontalSpacer_3</zorder>
+   <zorder>ar_label</zorder>
+   <zorder>horizontalSpacer_2</zorder>
+   <zorder>allrounderlabel</zorder>
+   <zorder>wk_label</zorder>
+   <zorder>wicketkeeperlabel</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>631</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuManage_Teams">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">BACKGROUND-COLOR:rgb(255, 170, 0);
+colo:rrgb(255, 255, 127);</string>
+    </property>
+    <property name="title">
+     <string>Manage Teams</string>
+    </property>
+    <addaction name="actionNEW_TEAM"/>
+    <addaction name="actionSAVE_TEAM"/>
+    <addaction name="separator"/>
+    <addaction name="actionOPEN_TEAM"/>
+    <addaction name="actionEVALUATE_TEAM"/>
+   </widget>
+   <addaction name="menuManage_Teams"/>
+  </widget>
+  <action name="actionNEW_TEAM">
+   <property name="text">
+    <string>NEW TEAM</string>
+   </property>
+  </action>
+  <action name="actionSAVE_TEAM">
+   <property name="text">
+    <string>SAVE TEAM</string>
+   </property>
+  </action>
+  <action name="actionOPEN_TEAM">
+   <property name="text">
+    <string>OPEN TEAM</string>
+   </property>
+  </action>
+  <action name="actionEVALUATE_TEAM">
+   <property name="text">
+    <string>EVALUATE TEAM</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
